@@ -17,3 +17,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+database/migrations/2024_12_17_172606_create_orders_table.php
