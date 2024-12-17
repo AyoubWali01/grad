@@ -13,13 +13,7 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('orderStatus_id')->references('id')->on('orderStatus')->onDelete('cascade');
-            // $table->enum('payment_method')->nullable();
-            $table->decimal(10,2)('total_price')->nullable();
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
-
+            $table->timestamps();
         });
     }
 
